@@ -102,7 +102,7 @@ const Sidebar = () => {
           </div>
           <div className="navLink" ref={anchorRef} onClick={handleToggle} style={{ cursor: 'pointer' }}>
             <MenuIcon sx={{ fontSize: "30px", margin: "0 20px 0 0" }} />
-            <div className="navName">Moreee</div>
+            <div className="navName">More</div>
           </div>
         </div>
       </div>
