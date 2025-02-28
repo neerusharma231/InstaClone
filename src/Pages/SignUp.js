@@ -1,5 +1,5 @@
 import React  from "react";
-import "./css/signup.css";
+import "../css/signup.css";
 import Logo from "../assests/insta_logo.png";
 import { Link } from "react-router-dom";
 const SignUp = () => {
@@ -32,13 +32,15 @@ const SignUp = () => {
               <Link href="#">Privacy Policy</Link>
                and <Link href="#">Cookies Policy</Link>.</p>
           </div>
-          <button className="sgnup-btn">Sign Up</button>
+          <button className="sgnup-btn">
+            <span >Sign Up </span>
+            </button>
           </div>
           
           </div>
           <div className="sgnup-section">
           <p>Have an account? </p>
-          <Link className="lgning-upp" href="/">Log in</Link>
+          <Link className="lgning-upp" to="/login">Log in</Link>
        
            </div>
       </div>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./css/login.css";
+import "../css/login.css";
 import Logo from "../assests/insta_logo.png";
 import { FaFacebook } from "react-icons/fa";
 import HomePhone from "../assests/home-phones.png";
@@ -9,6 +9,7 @@ import ig from "../assests/ig.png";
 import ig1 from "../assests/ig1.png";
 import ig2 from "../assests/ig2.png";
 import ig3 from "../assests/ig3.png";
+import { Link } from "react-router-dom";
 const Login = () => {
     const overlayImages = [ig, ig1, ig2, ig3,];
     const [currentImageIndex, setCurrentImageIndex]= useState(0);
@@ -49,14 +50,19 @@ const Login = () => {
           </div>
 
           <div className="forgot-password">
-            <span className="forget-passs">Forgot Password?</span>
+          <Link className="frgotpass" to="/forgotpassword">
+            <span className="forget-passs">
+              Forgot Password?</span></Link>
           </div>
           
           </div>
             <div className="sgn-up">
                 <p>Don't have account?
-                </p><span>Sign Up</span>
-               
+                </p>
+                <Link className="sgn-upesd" to="/signUp">  
+                <span className="sgningg-up">
+                  Sign Up</span>
+                  </Link>
             </div>
             <div className="get-app">
                 <span>Get the App</span>
